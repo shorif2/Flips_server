@@ -1,0 +1,22 @@
+{
+  "name": "genieup-server",
+  "version": "1.0.0",
+  "description": "Editable spreadesheet app with CRUD operations using Node.js, Express, and EJS. It allows users to create, read, update, and delete data in a tabular format. The app provides a user-friendly interface for managing data, making it easy to perform operations on the spreadsheet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

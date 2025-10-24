@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard - SignUp Accounts Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Handsontable CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /* Make all table borders lighter */
+      .handsontable .ht_master .htCore td,
+      .handsontable .ht_master .htCore th {
+        border-color: #e1e1e1 !important;
+      }
+      .unsaved-cell {
+        background-color: #c2a817 !important;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col h-screen py-4 bg-gray-50">
+    <div class="flex items-center p-4">
+      <h1 class="text-xl font-bold pl-2">Dashboard</h1>
+
+      <div id="saveStatus" class="text-lg pl-2">✅</div>
+    </div>
+    <!-- Spreadsheet container -->
+    <div id="spreadsheet" class="w-full border rounded shadow bg-white"></div>
+    <!-- Handsontable JS -->
+    <script src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+    <script src="/js/spreadsheet.js"></script>
+  </body>
+</html>
